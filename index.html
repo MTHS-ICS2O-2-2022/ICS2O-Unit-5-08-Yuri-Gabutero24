@@ -1,9 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Division with two integers" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Yuri G" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Long division</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"></div>
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Division with 2 integers..</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <h>Enter two numbers..</h>
+      </div>
+    </main>
+    <!--Simple text field for integers-->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input
+          class="mdl-textfield__input"
+          type="text"
+          pattern="[0-9]*"
+          id="first-number"
+        />
+        <label class="mdl-textfield__label" for="first-number"
+          >First number..</label
+        >
+        <span class="mdl-textfield__error">Input is not a number.</span>
+      </div>
+    </form>
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input
+          class="mdl-textfield__input"
+          type="text"
+          pattern="[0-9]*"
+          id="second-number"
+        />
+        <label class="mdl-textfield__label" for="second-number"
+          >Second number..</label
+        >
+        <span class="mdl-textfield__error">Input is not a number.</span>
+      </div>
+    </form>
+    <br />
+    <!--Colored raised button-->
+    <button
+      class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+      onclick="myButtonClicked()"
+    >
+      Calculate
+    </button>
   </body>
 </html>
