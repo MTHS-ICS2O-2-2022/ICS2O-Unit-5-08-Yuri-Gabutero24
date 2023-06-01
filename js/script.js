@@ -22,7 +22,7 @@ function myButtonClicked() {
   answer = counter
 
   //output
-  if remainder = 0 {
+  if (remainder = 0) {
   document.getElementById("answer").innerHTML = numberOne + " / " + numberTwo + " = " + answer + " with a remainder of " + remainder
   } else {
   document.getElementById("answer").innerHTML = numberOne + " / " + numberTwo + " = " + answer
