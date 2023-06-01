@@ -8,8 +8,8 @@
 
 function myButtonClicked() {
   //input
-  const numberOne = parseInt(document.getElementById("firstNumber").value)
-  const numberTwo = parseInt(document.getElementById("secondNumber").value)
+  const numberOne = parseInt(document.getElementById("first-number").value)
+  const numberTwo = parseInt(document.getElementById("second-number").value)
 
   // process
   let counter = 0
