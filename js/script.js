@@ -13,18 +13,15 @@ function myButtonClicked() {
 
   // process
   let counter = 0
-  let answer = 0
-  let remainder = numberOne
-  while (remainder >= numberTwo) {
-    remainder -= numberTwo
+  while (numberOne >= numberTwo) {
+    numberOne -= numberTwo
     counter++
   }
-  answer = counter
 
   //output
-  if (remainder = 0) {
-  document.getElementById("answer").innerHTML = numberOne + " / " + numberTwo + " = " + answer + " with a remainder of " + remainder
+  if (numberOne >= 0) {
+    document.getElementById("answer").innerHTML = "The answer is " + counter + " with a remainder of " + numberOne
   } else {
-  document.getElementById("answer").innerHTML = numberOne + " / " + numberTwo + " = " + answer
+    document.getElementById("answer").innerHTML = "The answer is " + counter
   }
 }
