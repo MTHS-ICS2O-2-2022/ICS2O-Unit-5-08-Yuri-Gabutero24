@@ -7,31 +7,11 @@
     <meta name="author" content="Yuri G" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/apple-touch-icon"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon-16x16.png"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
     <link rel="manifest" href="./images/site.webmanifest" />
     <title>Division</title>
   </head>
@@ -56,9 +36,9 @@
           class="mdl-textfield__input"
           type="text"
           pattern="[0-9]*"
-          id="first-number"
+          id="number-one"
         />
-        <label class="mdl-textfield__label" for="first-number"
+        <label class="mdl-textfield__label" for="number-one"
           >First number..</label
         >
         <span class="mdl-textfield__error">Input is not a number.</span>
@@ -70,9 +50,9 @@
           class="mdl-textfield__input"
           type="text"
           pattern="[0-9]*"
-          id="second-number"
+          id="number-two"
         />
-        <label class="mdl-textfield__label" for="second-number"
+        <label class="mdl-textfield__label" for="number-two"
           >Second number..</label
         >
         <span class="mdl-textfield__error">Input is not a number.</span>
@@ -80,10 +60,8 @@
     </form>
     <br />
     <!--Colored raised button-->
-    <button
-      class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
-      onclick="myButtonClicked()"
-    >
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+      onclick="myButtonClicked()">
       Calculate
     </button>
     <br />

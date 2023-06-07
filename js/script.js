@@ -8,8 +8,8 @@
 
 function myButtonClicked() {
   //input
-  const numberOne = parseInt(document.getElementById("first-number").value)
-  const numberTwo = parseInt(document.getElementById("second-number").value)
+  let numberOne = parseInt(document.getElementById("number-one").value)
+  let numberTwo = parseInt(document.getElementById("number-two").value)
 
   // process
   let counter = 0
@@ -19,7 +19,7 @@ function myButtonClicked() {
   }
 
   //output
-  if (numberOne >= 0) {
+  if (numberOne != 0) {
     document.getElementById("answer").innerHTML = "The answer is " + counter + " with a remainder of " + numberOne
   } else {
     document.getElementById("answer").innerHTML = "The answer is " + counter
